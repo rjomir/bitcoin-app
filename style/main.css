@@ -1,0 +1,115 @@
+@import "form.css";
+@import "table.css";
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #4a4a4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    padding: 40px 40px 20px;
+    max-width: 1280px;
+}
+
+.app-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 410px;
+    height: auto;
+    padding-top: 5px;
+}
+
+.app-layout-content {
+    display: flex;
+    flex-basis: 75%;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.app-layout-header {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    font-size: 24px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 29px;
+    height: 100px;
+    width: 100%;
+}
+
+.app-header-ribbon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    height: 80px;
+    z-index: 1;
+    width: 80px;
+}
+
+.app-header-ribbon span {
+    background-color: #fa6200;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    top: 15px;
+    transform: rotate(45deg);
+    right: -24px;
+    width: 100px;
+}
+
+.app-box {
+    background-color: #272727;
+    margin: 5px;
+}
+
+.app-box-head {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    font-size: 16px;
+    height: 40px;
+    padding-left: 16px;
+    line-height: 19px;
+}
+
+.app-box-content {
+    display: flex;
+    padding: 18px 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .app {
+        padding: 20px 20px 10px;
+    }
+
+    .app-layout {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .app {
+        padding: 10px;
+    }
+}

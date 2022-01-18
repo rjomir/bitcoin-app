@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style/main.css">
+      <title>Lotto & Bitcoin</title>
+   </head>
+   <body>
+      <section class="app">
+         <header class="app-layout-header">
+            Lotto & Bitcoin
+            <div class="app-header-ribbon">
+               <span>New</span>
+            </div>
+         </header>
+         <section class="app-layout">
+            <aside class="app-box">
+               <header class="app-box-head">The Irish Lotto</header>
+               <p class="app-box-content">
+                  Since 16th April 1988, the Irish Lotto draw takes place every Saturday at 8pm.
+                  On 30th May 1990 an additional Wednesday evening draw was introduced. <br/><br/>
+                  What would EUR 100 in winnings invested on a draw date be worth in Euro now? <br/><br/>
+                  Enter a date and time in the form to get the next draw date and time, with the current value of your
+                  investment.
+               </p>
+            </aside>
+            <main class="app-layout-content">
+               <article class="app-form-layout app-box">
+                  <header class="app-box-head">Enter a Date and Time</header>
+                  <div class="app-form-wrapper">
+                     <form id="app-form" class="app-form app-box-content">
+                        <label>
+                            <input id="date-input" type="datetime-local" required />
+                        </label>
+                        <button id="submit-button" type="submit">Submit</button>
+                     </form>
+                  </div>
+               </article>
+               <article class="app-table-layout app-box">
+                  <table class="app-table">
+                     <thead>
+                        <tr>
+                           <th class="app-table-date-column">Draw Date/Time</th>
+                           <th class="app-table-value-column">Your Bitcoin's Value</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="app-table-empty-row visible">
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </article>
+            </main>
+         </section>
+      </section>
+      <script src="js/constants.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/formatters.js"></script>
+      <script src="js/calculator.js"></script>
+      <script src="js/api.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

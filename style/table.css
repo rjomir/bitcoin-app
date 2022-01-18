@@ -1,0 +1,66 @@
+.app-table-layout {
+    flex-grow: 1;
+}
+
+.app-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.app-table th {
+    background-color: #000;
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: start;
+    padding-left: 16px;
+    text-transform: uppercase;
+}
+
+.app-table tbody {
+    font-size: 14px;
+    line-height: 17px;
+}
+.app-table tbody tr {
+    background-color: #191919;
+    opacity: 0;
+    transform: scale(0.6, 0.6) translate(50px, 0);
+    transition: opacity .2s ease-in, transform 0.3s ease-in;
+}
+
+.app-table tbody tr.visible {
+    opacity: 1;
+    transform: scale(1, 1) translate(0, 0);
+}
+
+.app-table .table-empty-row {
+    background-color: #272727;
+}
+
+.app-table td {
+    height: 40px;
+    padding-left: 10px;
+}
+
+.app-table tr.visible td:first-child {
+    border-right: 1px solid #000;
+}
+
+.app-table-date-column {
+    width: 20%;
+}
+
+.app-table-value-column {
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .app-table-date-column {
+        width: 50%;
+    }
+
+    .app-table-value-column {
+        width: 50%;
+    }
+}

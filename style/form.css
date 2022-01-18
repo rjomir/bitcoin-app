@@ -1,0 +1,76 @@
+.app-form-layout {
+    height: auto;
+    min-height: 168px;
+}
+
+.app-form-wrapper {
+    align-items: center;
+    display: flex;
+    height: calc(100% - 40px);
+}
+
+.app-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.app-form input {
+    border: none;
+    height: 36px;
+    padding-left: 10px;
+    outline: none;
+    width: 260px;
+}
+
+.app-form input:focus {
+    outline: 2px solid #fa6200;
+}
+
+.app-form button {
+    background-color: #fa6200;
+    border: 1px solid #fa6200;
+    box-shadow: 0 2px 4px #00000059;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 36px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    width: 140px;
+}
+
+.app-form button:hover {
+    background-color: #d15200;
+    border-color: #d15200;
+}
+
+.app-form button:active {
+    background-color: #a94404;
+    border-color: #a94404;
+}
+
+.app-form button:disabled {
+    cursor: not-allowed;
+    background-color: #696969;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .app-form-layout {
+        min-height: unset;
+    }
+
+    .app-form {
+        flex-direction: column;
+    }
+
+    .app-form input {
+        width: 100%;
+    }
+
+    .app-form button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
